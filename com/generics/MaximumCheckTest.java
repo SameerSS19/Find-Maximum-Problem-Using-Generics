@@ -77,4 +77,25 @@ public class MaximumCheckTest
         String maximumString = MaximumCheck.maximumString("Peach","Banana","Apple");
         Assert.assertEquals("Peach", maximumString);
     }
+    
+    /* Maximum Integer given Generic set */
+    @Test
+    public void maximumObjectInteger() {
+        Integer maximumObject = MaximumCheck.maximumOfObject(540, 350, 620);
+        Assert.assertEquals((Integer) 620, maximumObject);
+    }
+
+    /* Maximum Float given Generic set */
+    @Test
+    public void maximumObjectFloat() {
+        Float maximumObject = MaximumCheck.maximumOfObject(7.899f, 10.201f, 10.0f);
+        Assert.assertEquals((Float) 10.201f, maximumObject);
+    }
+
+    /* Maximum String given Generic set */
+    @Test
+    public void maximumObjectString() {
+        String maximumObject = MaximumCheck.maximumOfObject("BridgeLabz","Accenture", "MilestoneOS");
+        Assert.assertEquals((String) "MilestoneOS", maximumObject);
+    }
 }

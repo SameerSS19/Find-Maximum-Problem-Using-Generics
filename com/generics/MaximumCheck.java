@@ -28,4 +28,15 @@ public class MaximumCheck
             maximumValue = third; // third is larger
         return maximumValue;
     }
+    
+    /* In The Test Position Maximum of 3 String values */
+    public static String maximumString(String firstString, String secondString, String thirdString) 
+    {
+        String maximum = firstString;
+        if (secondString.compareTo(maximum) > 0)
+            maximum = secondString;
+        if (thirdString.compareTo(maximum) > 0)
+            maximum = thirdString;
+        return maximum;
+    }
 }
